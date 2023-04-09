@@ -17,5 +17,9 @@ password = uLetter or lLetter or digit1 or symbol1
 #Ouput
 pwSize = int(input("How many characters should this passord be?: "))
 
+print(f"Generating a password of length {pwSize} now")
+
 for x in range(pwSize):
+    if x == pwSize: break
     print (password)
+
