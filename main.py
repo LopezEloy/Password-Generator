@@ -15,9 +15,12 @@ symbol1=chr(random.randint(33,38)) #Generate a random symbol
 password = uLetter or lLetter or digit1 or symbol1
 
 #Ouput
-pwSize = int(input("How many characters should this passord be?: "))
+pwSize = int(input("How long should this passord be? Give a value: "))
+pwSym = int(input("How many symbols?: "))
+pwDig = int(input("How many digits: "))
+pwChar = int(input("How many characters?: "))
 
-print(f"Generating a password of length {pwSize} now")
+print(f"Generating a password of length {pwSize} with {pwSym} symbol(s), {pwDig} digit(s), and {pwChar} character(s)")
 
 for x in range(pwSize):
     if x == pwSize: break
