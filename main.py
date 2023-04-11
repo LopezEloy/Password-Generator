@@ -9,10 +9,7 @@ pwSym = int(input("How many symbols?: "))
 print(f"Generating a password of length {pwSize} with {pwLet} letter(s), {pwDig} digit(s), and {pwSym} symbol(s)")
 
 #Keep track of random generated individual passwords in arrays
-totLet = []
-totDig = []
-totSym = []
-totPW = []
+totLet, totDig, totSym, totPW = [], [], [], []
 
 #Creating for loops to randomize letters, digits, and symbols
 for x in range(0, pwLet):
